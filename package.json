@@ -1,0 +1,20 @@
+{
+  "name": "nordlyn-studio",
+  "version": "1.0.0",
+  "description": "Nordlyn Studio is a full-service digital studio creating product design, web development, and scalable digital solutions for modern businesses.",
+  "homepage": "https://github.com/Adam-Hamwandi/nordlyn-studio-project#readme",
+  "bugs": {
+    "url": "https://github.com/Adam-Hamwandi/nordlyn-studio-project/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Adam-Hamwandi/nordlyn-studio-project.git"
+  },
+  "license": "ISC",
+  "author": "Adam Hamwandi",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
