@@ -1,0 +1,27 @@
+# robots.txt for Nordlyn Studio
+# This file tells search engines which pages they can and cannot crawl
+
+# Allow all crawlers
+User-agent: *
+Allow: /
+
+# Disallow private/admin areas (add as needed)
+# Disallow: /admin
+# Disallow: /private
+
+# Crawl-delay in seconds (optional - helps reduce server load)
+Crawl-delay: 1
+
+# Sitemap location (add when you create sitemap.xml)
+# Sitemap: https://nordlyn-studio.com/sitemap.xml
+
+# Specific crawler rules (optional)
+# Google
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 0
+
+# Bing
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1
