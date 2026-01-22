@@ -1,0 +1,20 @@
+@use "../variables" as *;
+
+/* ************* */
+/* keyboard navigation */
+// ACCESSIBILITY - Skip Link & A11y
+/* ************* */
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background: $brand-color;
+  color: white;
+  padding: 0.8rem;
+  text-decoration: none;
+  z-index: 100;
+}
+
+.skip-link:focus {
+  top: 0;
+}
