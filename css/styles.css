@@ -137,30 +137,9 @@ html {
   border: none;
   font-weight: 600;
 }
-.btn--secondary {
-  background-color: transparent;
-  color: #d5e7ff;
-  border: 2px solid #d5e7ff;
-  font-weight: 300;
-}
-.btn {
-  /* ********************* */
-  /* Hero button animation */
-  /* ********************* */
-}
 .btn--primary:hover {
   transform: translateY(-3px);
   box-shadow: 0 1rem 2rem rgba(255, 255, 255, 0.335);
-}
-.btn--secondary:hover {
-  background-color: #d5e7ff;
-  color: #373b3e;
-  font-weight: 600;
-  box-shadow: 0 1rem 2rem rgba(255, 255, 255, 0.335);
-}
-.btn--primary:active, .btn--secondary:active {
-  transform: translateY(-1px);
-  box-shadow: 0 0.5rem 1rem rgba(255, 255, 255, 0.335);
 }
 .btn--primary::after {
   content: "";
@@ -179,6 +158,27 @@ html {
   background-color: #d5e7ff;
   opacity: 0;
   z-index: -2;
+}
+.btn--secondary {
+  background-color: transparent;
+  color: #d5e7ff;
+  border: 2px solid #d5e7ff;
+  font-weight: 300;
+}
+.btn--secondary:hover {
+  background-color: #d5e7ff;
+  color: #373b3e;
+  font-weight: 600;
+  box-shadow: 0 1rem 2rem rgba(255, 255, 255, 0.335);
+}
+.btn {
+  /* ********************* */
+  /* Hero button animation */
+  /* ********************* */
+}
+.btn--primary:active, .btn--secondary:active {
+  transform: translateY(-1px);
+  box-shadow: 0 0.5rem 1rem rgba(255, 255, 255, 0.335);
 }
 
 @keyframes moveInLeft {

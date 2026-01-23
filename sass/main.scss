@@ -117,6 +117,30 @@ html {
     color: $body-dark-color;
     border: none;
     font-weight: 600;
+    &:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 1rem 2rem rgba(255, 255, 255, 0.335);
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      border-radius: 0.8rem;
+      background-color: rgba(255, 255, 255, 0.15);
+      transform: scale(0);
+      transform-origin: center;
+      transition: all 0.4s ease-in-out;
+      z-index: -2;
+      pointer-events: none;
+    }
+
+    &:hover::after {
+      transform: scaleX(1.4) scaleY(2);
+      background-color: $brand-color-lightest;
+      opacity: 0;
+      z-index: -2;
+    }
   }
 
   &--secondary {
@@ -124,46 +148,23 @@ html {
     color: $brand-color-lightest;
     border: 2px solid $brand-color-lightest;
     font-weight: 300;
+
+    &:hover {
+      background-color: $brand-color-lightest;
+      color: $body-dark-color;
+      font-weight: 600;
+      box-shadow: 0 1rem 2rem rgba(255, 255, 255, 0.335);
+    }
   }
 
   /* ********************* */
   /* Hero button animation */
   /* ********************* */
-  &--primary:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 1rem 2rem rgba(255, 255, 255, 0.335);
-  }
 
-  &--secondary:hover {
-    background-color: $brand-color-lightest;
-    color: $body-dark-color;
-    font-weight: 600;
-    box-shadow: 0 1rem 2rem rgba(255, 255, 255, 0.335);
-  }
   &--primary:active,
   &--secondary:active {
     transform: translateY(-1px);
     box-shadow: 0 0.5rem 1rem rgba(255, 255, 255, 0.335);
-  }
-
-  &--primary::after {
-    content: "";
-    position: absolute;
-    inset: 0;
-    border-radius: 0.8rem;
-    background-color: rgba(255, 255, 255, 0.15);
-    transform: scale(0);
-    transform-origin: center;
-    transition: all 0.4s ease-in-out;
-    z-index: -2;
-    pointer-events: none;
-  }
-
-  &--primary:hover::after {
-    transform: scaleX(1.4) scaleY(2);
-    background-color: $brand-color-lightest;
-    opacity: 0;
-    z-index: -2;
   }
 }
 
