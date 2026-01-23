@@ -1,7 +1,32 @@
-@use "variables" as *;
 @use "colors" as *;
 @use "reset" as *;
-@use "components/accessibility" as *;
+
+// ************** */
+// Abstracts
+// ************** */
+@use "abstracts/accessibility" as *;
+@use "abstracts/functions" as *;
+@use "abstracts/mixins" as *;
+@use "abstracts/variables" as *;
+
+// ************** */
+// Base
+// ************** */
+@use "base/animations" as *;
+@use "base/base" as *;
+@use "base/typography" as *;
+@use "base/utilities" as *;
+// ************** */
+// Pages
+// ************** */
+@use "pages/404" as *;
+@use "pages/about" as *;
+@use "pages/blog" as *;
+@use "pages/contact" as *;
+@use "pages/home" as *;
+@use "pages/privacy-policy" as *;
+@use "pages/services" as *;
+@use "pages/work" as *;
 
 body {
   font-family: "Roboto", sans-serif;
@@ -97,6 +122,7 @@ html {
     gap: 4rem;
   }
 }
+
 .btn {
   font-size: 1.8rem;
   padding: 1.8rem 3.2rem;
