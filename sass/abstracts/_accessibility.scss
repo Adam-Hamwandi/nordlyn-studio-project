@@ -1,4 +1,4 @@
-@use "../abstracts/colors" as *;
+@use "colors" as *;
 
 /* ************* */
 /* keyboard navigation */
@@ -9,7 +9,7 @@
   top: -40px;
   left: 0;
   background: $brand-color;
-  color: white;
+  color: $pure-white;
   padding: 0.8rem;
   text-decoration: none;
   z-index: 100;
