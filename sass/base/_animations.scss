@@ -1,0 +1,57 @@
+@use "../abstracts/colors" as *;
+/* ********************* */
+/* Hero button animation */
+/* ********************* */
+
+.btn--primary:active,
+.btn--secondary:active {
+  transform: translateY(-1px);
+  box-shadow: 0 0.5rem 1rem rgba(255, 255, 255, 0.335);
+}
+
+.btn--primary:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 1rem 2rem rgba(255, 255, 255, 0.335);
+}
+
+.btn--primary::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 0.8rem;
+  background-color: rgba(255, 255, 255, 0.15);
+  transform: scale(0);
+  transform-origin: center;
+  transition: all 0.4s ease-in-out;
+  z-index: -2;
+  pointer-events: none;
+}
+
+.btn--primary:hover::after {
+  transform: scaleX(1.4) scaleY(2);
+  background-color: $brand-color-lightest;
+  opacity: 0;
+  z-index: -2;
+}
+
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
