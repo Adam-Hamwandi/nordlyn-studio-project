@@ -15,10 +15,11 @@
   "type": "commonjs",
   "main": "index.js",
   "scripts": {
-    "sass": "sass sass/main.scss css/styles.css",
+    "sass": "sass sass/main.scss css/styles.css -w",
     "sass:watch": "sass --watch sass:css"
   },
   "dependencies": {
+    "live-server": "^1.2.2",
     "sass": "^1.97.2"
   }
 }
