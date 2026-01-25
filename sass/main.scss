@@ -14,6 +14,7 @@
 @use "base/base" as *;
 @use "base/typography" as *;
 @use "base/utilities" as *;
+
 // ************** */
 // Pages
 // ************** */
@@ -110,3 +111,15 @@
 /* ************* */
 /* Header styles end*/
 /* ************* */
+
+.icon__container {
+  display: inline-block;
+  background-color: $brand-color-lightest;
+  border-radius: 100%;
+  height: 6em;
+  width: 6em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
