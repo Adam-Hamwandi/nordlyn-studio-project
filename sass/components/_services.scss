@@ -1,0 +1,52 @@
+@use "../abstracts/colors" as *;
+
+.services {
+  padding: 9rem 2rem;
+  background: $surface-bg-light-color;
+
+  &__title {
+    font-size: 3.2rem;
+    margin-bottom: 6rem;
+    text-align: center;
+    color: $heading-dark-color;
+  }
+
+  &__cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    row-gap: 6rem;
+    column-gap: 6rem;
+    max-width: 140rem;
+    margin: 0 auto;
+  }
+
+  .service-card {
+    background: $pure-white;
+    border-radius: 0.8rem;
+    padding: 3rem;
+    box-shadow: 0 4px 6px rgba($brand-color, 0.1);
+    // text-align: center;
+    transition:
+      transform 0.3s ease,
+      box-shadow 0.3s ease;
+
+    &:hover {
+      transform: translateY(-1rem);
+      box-shadow: 0 8px 12px rgba($brand-color, 0.15);
+      cursor: pointer;
+    }
+
+    &__title {
+      font-size: 1.8rem;
+      margin-top: 1.5rem;
+      margin-bottom: 1rem;
+      color: $heading-dark-color;
+    }
+
+    &__description {
+      font-size: 1.4rem;
+      color: $body-dark-color;
+      line-height: 1.6;
+    }
+  }
+}

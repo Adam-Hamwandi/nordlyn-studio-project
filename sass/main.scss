@@ -31,99 +31,11 @@
 // Components
 // ************** */
 @use "components/_buttons" as *;
-
+@use "components/trusted-by" as *;
+@use "components/icons" as *;
+@use "components/services" as *;
 // ************** */
 // Layout
 // ************** */
 @use "layout/navigation" as *;
-
-/* ************* */
-/* Header styles */
-/* ************* */
-
-.header {
-  min-height: 95vh;
-  position: relative;
-  overflow: hidden;
-  contain: layout paint;
-  border-top-left-radius: 1rem;
-  border-top-right-radius: 1rem;
-
-  &__bg {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    background-repeat: no-repeat;
-    z-index: -2;
-  }
-
-  &__overlay {
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(
-      to left,
-      $linear-gradient-overlay-dark,
-      $linear-gradient-overlay-darker
-    );
-    z-index: -2;
-  }
-
-  &__logo-box {
-    position: absolute;
-    top: 3.2rem;
-    left: 4.8rem;
-  }
-
-  &__logo {
-    height: 6em;
-  }
-
-  &__content {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    max-width: 50%;
-    z-index: 1;
-  }
-
-  &__title {
-    font-size: clamp(3.2rem, 4vw, 6rem);
-    color: $heading-light-color;
-    margin-bottom: 1.5rem;
-    font-weight: 600;
-    line-height: 1.4;
-    animation: moveInLeft 1s ease-out;
-    transform: translateX(0);
-  }
-
-  &__subtitle {
-    font-size: clamp(1.6rem, 2.5vw, 2.2rem);
-    color: $body-light-color;
-    font-weight: 300;
-    max-width: 75ch;
-    margin: 0 auto;
-    margin-bottom: 6rem;
-    animation: moveInRight 1s ease-out;
-    transform: translateX(0);
-  }
-}
-
-/* ************* */
-/* Logo container*/
-/* ************* */
-.icon__container {
-  display: inline-block;
-  background-color: $brand-color-lightest;
-  border-radius: 100%;
-  height: 6em;
-  width: 6em;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
+@use "layout/header" as *;
