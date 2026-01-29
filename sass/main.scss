@@ -32,6 +32,11 @@
 // ************** */
 @use "components/_buttons" as *;
 
+// ************** */
+// Layout
+// ************** */
+@use "layout/navigation" as *;
+
 /* ************* */
 /* Header styles */
 /* ************* */
@@ -109,9 +114,8 @@
 }
 
 /* ************* */
-/* Header styles end*/
+/* Logo container*/
 /* ************* */
-
 .icon__container {
   display: inline-block;
   background-color: $brand-color-lightest;
